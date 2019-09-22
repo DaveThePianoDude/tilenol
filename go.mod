@@ -7,6 +7,7 @@ require (
 	github.com/go-chi/cors v1.0.0
 	github.com/go-redis/redis v6.15.5+incompatible
 	github.com/go-yaml/yaml v2.1.0+incompatible
+	github.com/kisielk/godepgraph v0.0.0-20190626013829-57a7e4a651a9 // indirect
 	github.com/mailru/easyjson v0.7.0 // indirect
 	github.com/olivere/elastic v6.2.23+incompatible
 	github.com/paulmach/orb v0.1.4
