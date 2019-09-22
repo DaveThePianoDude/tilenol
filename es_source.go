@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/olivere/elastic"
+	"github.com/olivere/elastic/v7"
 	"github.com/paulmach/orb/geojson"
 	"github.com/paulmach/orb/maptile"
 )
@@ -172,7 +172,7 @@ func (e *ElasticsearchSource) doGetFeatures(ctx context.Context, req *TileReques
 func (e *ElasticsearchSource) HitToFeature(hit *elastic.SearchHit) (*geojson.Feature, error) {
 	id := hit.Id
 	var source map[string]interface{}
-	err := json.Unmarshal(*hit.Source, &source)
+	err := json.Unmarshal(hit.Source, &source)
 	if err != nil {
 		return nil, err
 	}
