@@ -3,7 +3,7 @@ package tilenol
 import (
 	"os"
 
-	"gopkg.in/go-yaml/yaml.v2"
+	"github.com/go-yaml/yaml"
 )
 
 // Config is a YAML server configuration object
