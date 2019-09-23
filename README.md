@@ -1,11 +1,10 @@
-<<<<<<< HEAD
 tilenol [![GoDoc](https://godoc.org/github.com/StationA/tilenol?status.svg)](https://godoc.org/github.com/StationA/tilenol) [![Go Report Card](https://goreportcard.com/badge/github.com/stationa/tilenol)](https://goreportcard.com/report/github.com/stationa/tilenol) [![Build Status](https://api.travis-ci.com/StationA/tilenol.svg?branch=master)](https://travis-ci.com/StationA/tilenol)
 =========
 
-Got Go Modules working. - DAH
-
 Tilenol is a scalable web server for serving geospatial data stored in an ElasticSearch cluster as
 Mapbox Vector Tiles.
+
+As of September 23, 2019, this version of tilenol has been upgraded to work with the new Go Modules package management system introduced in Go 1.11.  The elastic search module (by Olivere) has been upgraded via Go modules such that this now works with elastic Version 7.
 
 ## Installation
 
